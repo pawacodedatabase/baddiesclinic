@@ -98,7 +98,7 @@ Your Booking ID is ${newBooking.id}. Please keep it safe. \n
 />
 
 
-
+<p className="text-sm mt-3 mb-2">Select Date</p>
     <input
   className="border p-2 w-full mb-2"
   type="date"
@@ -107,6 +107,8 @@ Your Booking ID is ${newBooking.id}. Please keep it safe. \n
   onChange={e => setDate(e.target.value)}
 />
 
+
+<p className="text-sm mt-3 mb-2">Select Service</p>
    <select
   className="border p-2 w-full mb-2"
   value={bookingType}
