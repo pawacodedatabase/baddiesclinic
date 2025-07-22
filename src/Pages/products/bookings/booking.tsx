@@ -58,13 +58,14 @@ const [bookingType, setBookingType] = useState<keyof typeof services>("hairstyli
     setTimeout(() => {
       setLoading(false);
       setSuccessMessage(`Hii ${newBooking.name} , Your booking is successful!
-Your Booking ID is ${newBooking.id}. Please keep it safe.`);
+Your Booking ID is ${newBooking.id}. Please keep it safe. \n
+`);
       setName(""); setPhone(""); setDate(""); setBookingType("hairstyling");
     }, 5000);
   };
 
   return (
-    <div className="p-4 max-w-md w-full mx-auto font-sans  bg-[#000] text-gray-800">
+    <div className="p-4 max-w-md w-full mx-auto font-sans  text-gray-800">
       {loading && (
         <div className="fixed inset-0 bg-[#000] flex flex-col items-center justify-center z-50">
           <img src={logo} alt="Logo" className=" w-[150px] mb-4" />
@@ -75,7 +76,7 @@ Your Booking ID is ${newBooking.id}. Please keep it safe.`);
         </div>
       )}
 
-      <h2 className="text-xl font-bold mb-4 text-purple-700">Book Appointment </h2>
+      <h2 className="text-xl font-bold mb-4 ">Book Appointment </h2>
 
       {successMessage && (
         <div className="bg-green-50 text-green-800 p-4 mb-4 rounded shadow">{successMessage}</div>
@@ -111,14 +112,14 @@ Your Booking ID is ${newBooking.id}. Please keep it safe.`);
   value={bookingType}
   onChange={e => setBookingType(e.target.value as "hairstyling" | "revamping" | "dreadlocks")}
 >
-  <option value="hairstyling">Hairstyling – €40</option>
-  <option value="revamping">Revamping – €60</option>
-  <option value="dreadlocks">Dreadlocks – €80</option>
+  <option value="hairstyling">Hairstyling – £40</option>
+  <option value="revamping">Revamping – £60</option>
+  <option value="dreadlocks">Dreadlocks – £80</option>
 </select>
 
 
       <button
-        className="bg-purple-700 text-white px-4 py-2 w-full rounded hover:bg-purple-800 transition"
+        className="bg-black  text-white px-4 py-2 w-full rounded hover:bg-gray-700 mb-9 transition"
         onClick={handleBook}
       >
         Book Appointment
@@ -127,7 +128,7 @@ Your Booking ID is ${newBooking.id}. Please keep it safe.`);
       <CheckBooking  />
 
       <div className="mt-6 text-sm text-gray-600 border-t pt-4">
-        <h3 className="font-bold text-lg mb-2 text-purple-800">Policies – Baddies Clinic</h3>
+        {/* <h3 className="font-bold text-lg mb-2 text-purple-800">Policies – Baddies Clinic</h3> */}
 
         <h4 className="font-semibold">Deposit</h4>
         <p className="mb-2">
