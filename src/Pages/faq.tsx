@@ -4,44 +4,44 @@ import ReviewComponent from './components/review';
 
 const faqs = [
   {
-    question: "What makes Rocspace different from other clothing brands?",
+    question: "What makes Baddies Clinic unique?",
     answer:
-      "Rocspace is where bold design meets everyday wear. We fuse streetwear attitude with premium quality to help you stand out and feel unstoppable.",
+      "At Baddies Clinic, we blend hair artistry with luxury service. Whether you're buying a wig or booking a styling session, you're stepping into a space where beauty and confidence come first.",
   },
   {
-    question: "Are Rocspace pieces durable?",
+    question: "Do you sell high-quality wigs?",
     answer:
-      "Absolutely. Each shirt and hoodie is made with premium fabrics and reinforced stitching, ensuring long-lasting wear and top-tier comfort.",
+      "Yes! All our wigs are made from premium fibers or 100% human hair. Each piece is crafted to ensure durability, natural appearance, and comfort.",
   },
   {
-    question: "Do you release limited collections?",
+    question: "Can I book an appointment for both male and female styling?",
     answer:
-      "Yes. We regularly drop exclusive collections with limited runs—once they're gone, they’re gone. Follow us on social media or subscribe to stay in the loop.",
+      "Absolutely. We cater to all genders with expert hair services — from sleek installations to bold dreadlock designs and trims.",
   },
   {
-    question: "What’s your return policy?",
+    question: "Do you offer dreadlock services?",
     answer:
-      "You have 30 days to return unused items in original condition and packaging. If something’s not right, we’ve got you covered.",
+      "Yes, we specialize in dreadlocks — from starter locs to maintenance and creative styles. Our stylists are experienced in various loc techniques.",
   },
   {
-    question: "Why trust Rocspace?",
+    question: "What’s your appointment policy?",
     answer:
-      "Thousands of customers trust Rocspace for our focus on quality, originality, and street-level authenticity. We're not just clothing — we're culture.",
+      "To serve you best, we work strictly by appointment. You can reschedule or cancel up to 24 hours in advance. Late arrivals may require a new booking.",
   },
   {
-    question: "Can I customize my order?",
+    question: "Can I request a custom wig?",
     answer:
-      "We occasionally offer personalization or one-off pieces. Be on the lookout during special drops or collaborations.",
+      "Definitely. We accept custom wig orders based on length, color, density, and style preferences. Just reach out, and we’ll make your vision come alive.",
   },
   {
-    question: "How do I choose the right size?",
+    question: "How do I know which wig suits me?",
     answer:
-      "Our product pages include a detailed size chart. If you're unsure, reach out to our support — we're happy to help you get the right fit.",
+      "Our team is always ready to assist. You can chat with us, and we’ll recommend wigs that complement your face shape, lifestyle, and personal style.",
   },
   {
-    question: "Can I order in bulk for a team or crew?",
+    question: "Do you offer group bookings or bridal styling?",
     answer:
-      "Yes. Rocspace supports bulk and group orders. Contact us directly and we’ll hook you up with tailored pricing and info.",
+      "Yes, we provide styling for bridal parties, events, and group bookings. Contact us for tailored packages and early scheduling.",
   },
 ];
 
@@ -54,14 +54,14 @@ const FAQAccordion: React.FC = () => {
 
   return (
     <>
-      <div className="p-8 bg-gray-100 min-h-screen">
+      <div className="p-8 bg-pink-50 min-h-screen">
         {/* Heading */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-800 font-luxe">
-            Why Rock With Rocspace?
+          <h1 className="text-4xl font-bold text-pink-700 font-luxe">
+            Why Choose Baddies Clinic?
           </h1>
-          <p className="mt-4 text-gray-600">
-            Discover how Rocspace delivers streetwear with attitude, quality, and confidence in every stitch.
+          <p className="mt-4 text-gray-700 max-w-2xl mx-auto">
+            Your hair, your crown — whether you're rocking a wig, locs, or getting styled for a special day, we’re here to make you feel your baddest.
           </p>
         </div>
 
@@ -70,18 +70,18 @@ const FAQAccordion: React.FC = () => {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="border-b border-gray-300 mb-4 bg-white rounded-lg shadow-lg"
+              className="border-b border-gray-300 mb-4 bg-white rounded-lg shadow-md"
             >
               {/* Question */}
               <div
                 onClick={() => toggleAccordion(index)}
-                className="flex justify-between items-center p-5 cursor-pointer transition duration-300 hover:bg-gray-50"
+                className="flex justify-between items-center p-5 cursor-pointer transition duration-300 hover:bg-pink-100"
               >
                 <h3 className="text-lg font-semibold text-gray-800">
                   {faq.question}
                 </h3>
                 <motion.div
-                  className="text-gray-500"
+                  className="text-pink-500"
                   animate={{ rotate: activeIndex === index ? 180 : 0 }}
                 >
                   ▼
