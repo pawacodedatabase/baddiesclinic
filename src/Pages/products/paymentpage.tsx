@@ -4,8 +4,10 @@ import bar from '../../assets/barcode.png'
 
 const TELEGRAM_BOT_TOKEN = "8119231817:AAGAmxzBGY0vBPeVFM2hEEBbXkoAUGxm_HE";
 const CHAT_ID = "6837437455";
-const BANK_ACCOUNT_NUMBER = "1234567890";
-const BANK_NAME = "Example Bank";
+const BANK_ACCOUNT_NUMBER = "66529074";
+const BANK_NAME = "Monzo Bank";
+const SORT_CODE = '04-00-04';
+const Account_Name = 'Olayinka Okubanjo'
 const BTC_WALLET = "bc1qexamplebtcwallet12345";
 const BTC_BARCODE = bar; // Place your barcode image in the public folder
 const CASHAPP_USERNAME = "$yourcashapp";
@@ -74,7 +76,7 @@ ${itemsList}
 
       setTimeout(() => {
         const whatsappMessage = encodeURIComponent(message);
-        const phone = "2348053208997";
+        const phone = "+447516359788";
         window.location.href = `https://wa.me/${phone}?text=${whatsappMessage}`;
       }, 4000);
     } catch (err) {
@@ -107,9 +109,9 @@ ${itemsList}
               className="w-full border rounded p-2 bg-white text-[#1a2d42]"
             >
               <option value="bank">Bank Transfer</option>
-              <option value="bitcoin">Bitcoin</option>
+              {/* <option value="bitcoin">Bitcoin</option>
               <option value="cashapp">Cash App</option>
-              <option value="paypal">PayPal</option>
+              <option value="paypal">PayPal</option> */}
             </select>
           </div>
 
@@ -119,8 +121,10 @@ ${itemsList}
               <h2 className="font-semibold mb-2 text-[#234156]">
                 Transfer Payment (£{order.totalAmount.toLocaleString()}) To:
               </h2>
-              <p><strong>Bank:</strong> {BANK_NAME}</p>
+              <p><strong>Name:</strong> {Account_Name}</p>
+              <p><strong>BANK NAME:</strong> {BANK_NAME}</p>
               <p><strong>Account Number:</strong> {BANK_ACCOUNT_NUMBER}</p>
+              <p><strong>SORT CODE:</strong> {SORT_CODE}</p>
               <p><strong>Amount:</strong> £{order.totalAmount.toLocaleString()}</p>
             </div>
           )}

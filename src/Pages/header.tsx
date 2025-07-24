@@ -52,7 +52,7 @@ const Header: React.FC = () => {
         </div>
 
         {/* Desktop Navigation (Left of Logo) */}
-        <div className="hidden md:flex items-center gap-4 ">
+        <div className="hidden md:flex items-center gap-3 ">
           <Link
             to="/"
             className="relative text-[#FFD700] hover:text-gray-600 transition-colors duration-300 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[2px] before:bg-[#2E4156] before:transition-all before:duration-300 before:ease-in-out hover:before:w-full hover:before:left-0"
@@ -64,6 +64,24 @@ const Header: React.FC = () => {
             className="relative text-[#FFD700] hover:text-gray-600 transition-colors duration-300 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[2px] before:bg-[#2E4156] before:transition-all before:duration-300 before:ease-in-out hover:before:w-full hover:before:left-0"
           >
             Shop
+          </Link>
+          <Link
+            to="/policy"
+            className="relative text-[#FFD700] hover:text-gray-600 transition-colors duration-300 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[2px] before:bg-[#2E4156] before:transition-all before:duration-300 before:ease-in-out hover:before:w-full hover:before:left-0"
+          >
+            Our Policy
+          </Link>
+          <Link
+            to="/book"
+            className="relative text-[#FFD700] hover:text-gray-600 transition-colors duration-300 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[2px] before:bg-[#2E4156] before:transition-all before:duration-300 before:ease-in-out hover:before:w-full hover:before:left-0"
+          >
+            Book
+          </Link>
+          <Link
+            to="/wigrevamp"
+            className="relative text-[#FFD700] hover:text-gray-600 transition-colors duration-300 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[2px] before:bg-[#2E4156] before:transition-all before:duration-300 before:ease-in-out hover:before:w-full hover:before:left-0"
+          >
+            Wig Revamp
           </Link>
           {/* <Link
             to="/about"
@@ -123,20 +141,14 @@ const Header: React.FC = () => {
             <Link to="/faq" className="relative text-[#FFD700] hover:text-gray-400 transition-colors duration-300 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[2px] before:bg-[#2E4156] before:transition-all before:duration-300 before:ease-in-out hover:before:w-full hover:before:left-0" onClick={() => setIsMenuOpen(false)}>
               FAQ
             </Link>
-            {/* <hr className="border-2 border-gray-800 w-[30%]"/> */}
-            {/* <Link
-            to="/blog"
-            className="relative text-[#FFD700] hover:text-gray-400 transition-colors duration-300 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[2px] before:bg-[#2E4156] before:transition-all before:duration-300 before:ease-in-out hover:before:w-full hover:before:left-0" onClick={() => setIsMenuOpen(false)}
-          >
-            Blog
-          </Link> */}
-
-         
-
-            {/* <Link to="/collection" className="relative text-[#fff] hover:text-yellow-300 transition-colors duration-300 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[2px] before:bg-[#2E4156] before:transition-all before:duration-300 before:ease-in-out hover:before:w-full hover:before:left-0" onClick={() => setIsMenuOpen(false)}>
-              Collection
-            </Link> */}
-            {/* <hr className="border-2 border-gray-800 w-[20%]"/> */}
+            <hr className="border-2 border-gray-800 w-[30%]"/> 
+          <Link to="/policy" className="relative text-[#FFD700] hover:text-gray-400 transition-colors duration-300 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[2px] before:bg-[#2E4156] before:transition-all before:duration-300 before:ease-in-out hover:before:w-full hover:before:left-0" onClick={() => setIsMenuOpen(false)}>
+              Our Policy
+            </Link>
+            <hr className="border-2 border-gray-800 w-[30%]"/> 
+          <Link to="/wigrevamp" className="relative text-[#FFD700] hover:text-gray-400 transition-colors duration-300 before:absolute before:bottom-0 before:left-1/2 before:w-0 before:h-[2px] before:bg-[#2E4156] before:transition-all before:duration-300 before:ease-in-out hover:before:w-full hover:before:left-0" onClick={() => setIsMenuOpen(false)}>
+              Wig Revamp
+            </Link>
           </nav>
         </div>
       )}

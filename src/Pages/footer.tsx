@@ -42,10 +42,10 @@ const Footer = () => {
   <h3 className="uppercase font-semibold text-sm mb-4">Quick Links</h3>
   <ul className="space-y-2 text-sm">
     <li>
-      <Link to="/legal" className="hover:underline">FAQs</Link>
+      <Link to="/faq" className="hover:underline">FAQs</Link>
     </li>
     <li>
-      <Link to="/legal" className="hover:underline">Policies</Link>
+      <Link to="/policy" className="hover:underline">Policies</Link>
     </li>
     <li>
       <Link to="/legal" className="hover:underline">Terms and Conditions</Link>
@@ -61,17 +61,17 @@ const Footer = () => {
           <p className="text-sm mb-2">Operating Hours:</p>
           <p className="text-sm mb-1">Mon – Sat: 10am – 10pm</p>
           <p className="text-sm mb-2">Sun: 12pm – 10pm</p>
-          <p className="text-sm mb-4">+234 0000000000</p>
+          <p className="text-sm mb-4">+447516359788</p>
           <div className="flex gap-4 text-lg">
             <a
-              href="https://instagram.com/"
+              href="https://www.instagram.com/baddies_clinic_?igsh=NnIzY2hndTE5NTFo&utm_source=qr"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaInstagram />
             </a>
             <a
-              href="https://wa.me/"
+              href="https://wa.me/+447516359788"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -23,6 +23,9 @@ import LegSizeGuide from './Pages/components/guide';
 import LegalTerms from './Pages/components/LegalTerm';
 import PaymentPage from './Pages/products/paymentpage';
 import BookingForm from './Pages/products/bookings/booking';
+import PolicyPage from './Pages/components/policy';
+import PriceList from './Pages/components/pricelist';
+import WigRevamp from './Pages/components/wigrevamp';
 
 
 // Importing pages
@@ -55,6 +58,9 @@ const App: React.FC = () => {
         <Route path="/guide" element={<LegSizeGuide/>} />
         <Route path="/payment" element={<PaymentPage/>} />
         <Route path="/blog/:id" element={<BlogDetail/>} />
+        <Route path="/policy" element={<PolicyPage/>} />
+        <Route path="/pricelist" element={<PriceList/>} />
+        <Route path="/wigrevamp" element={<WigRevamp/>} />
         <Route path="/product/:id" element={<ProductDetail />} />
          </Routes>
          <Footer/>

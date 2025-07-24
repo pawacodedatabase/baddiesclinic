@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
-import { FaEnvelope, FaInstagram, FaRegStar, FaShoppingBag, FaStar } from 'react-icons/fa';
+import {  FaInstagram, FaRegStar, FaShoppingBag, FaStar, FaWhatsapp } from 'react-icons/fa';
 import { FiShoppingCart } from 'react-icons/fi';
 import FeaturedProduct from './FeaturedProd';
 // import ReviewComponent from '../components/review';
@@ -371,10 +371,10 @@ const ProductDetail: React.FC = () => {
 
           {/* Social Media */}
           <div className="mt-6 flex justify-center space-x-4">
-            <a href="mailto:rockspace" className="text-black hover:text-red-500">
-              <FaEnvelope size={24} />
+            <a href="https://wa.me/+447516359788" className="text-black hover:text-red-500">
+              <FaWhatsapp size={24} />
             </a>
-            <a href="https://instagram.com/rocspace_mbc" className="text-black hover:text-red-500">
+            <a href="https://www.instagram.com/baddies_clinic_?igsh=NnIzY2hndTE5NTFo&utm_source=qr" className="text-black hover:text-red-500">
               <FaInstagram size={24} />
             </a>
           </div>
