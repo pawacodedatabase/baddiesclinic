@@ -114,9 +114,9 @@ Your Booking ID is ${newBooking.id}. Please keep it safe. \n
   value={bookingType}
   onChange={e => setBookingType(e.target.value as "hairstyling" | "revamping" | "dreadlocks")}
 >
-  <option value="hairstyling">Hairstyling – £40</option>
-  <option value="revamping">Revamping – £60</option>
-  <option value="dreadlocks">Dreadlocks – £80</option>
+  <option value="hairstyling">Hairstyling </option>
+  <option value="revamping">Revamping </option>
+  <option value="dreadlocks">Dreadlocks </option>
 </select>
 
 
